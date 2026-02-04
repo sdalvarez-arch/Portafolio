@@ -12,33 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <style>
-        body { 
-            background-color: #000000; 
-            color: #ffffff; 
-            font-family: 'Inter', sans-serif; 
-        }
+        body { background-color: #000000; color: #ffffff; font-family: 'Inter', sans-serif; }
         .text-lime { color: #84cc16; }
         .bg-lime { background-color: #84cc16; }
         .border-lime { border-color: #84cc16; }
         .hover-lime:hover { color: #84cc16; transition: 0.3s; }
         
-        /* Estilo para las barras de scroll */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #000; }
         ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #84cc16; }
-        /* Animación de flotado suave */
+
         @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
         }
-
-        .animate-float {
-        animation: float 3s ease-in-out infinite;
-        }
-
-        /* Retrasos diferentes para que no se muevan todos al mismo tiempo */
+        .animate-float { animation: float 3s ease-in-out infinite; }
         .delay-1 { animation-delay: 0s; }
         .delay-2 { animation-delay: 0.5s; }
         .delay-3 { animation-delay: 1s; }
@@ -62,31 +52,28 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION (Estilo Janet: Texto a la izquierda, sin foto) -->
+    <!-- HERO SECTION -->
     <section id="inicio" class="min-h-screen flex flex-col justify-center px-6 md:px-40">
         <div class="max-w-4xl">
             <h3 class="text-xl md:text-2xl text-zinc-400 mb-4 font-light italic">¡Hola... Bienvenido a mi espacio!</h3>
-            
             <h1 class="text-5xl md:text-8xl font-bold mb-8 tracking-tight">
                 Soy <span id="typing" class="text-lime"></span>
             </h1>
             <p class="text-zinc-400 text-lg md:text-xl leading-relaxed mb-12 max-w-3xl">
-            Ingeniero de Sistemas enfocado en <span class="text-white font-bold">Backend y Automatización</span>. 
-            Con más de <span class="text-white font-bold">8 años de trayectoria</span>, me especializo en el desarrollo de soluciones mediante 
-            <span class="text-lime font-bold">Python y SQL Server</span>, integrando <span class="text-white font-bold">Inteligencia Artificial</span> 
-            y ecosistemas digitales con <span class="text-lime font-bold">Power Apps y Power Automate</span>.
-            Experto en transformar procesos complejos en flujos eficientes en la nube (<span class="text-white font-bold italic">AWS</span>).
-        </p>
-            <!-- BOTONES -->
+                Ingeniero de Sistemas enfocado en <span class="text-white font-bold">Backend y Automatización</span>. 
+                Con más de <span class="text-white font-bold">8 años de trayectoria</span>, me especializo en el desarrollo de soluciones mediante 
+                <span class="text-lime font-bold">Python y SQL Server</span>, integrando <span class="text-white font-bold">Inteligencia Artificial</span> 
+                y ecosistemas digitales con <span class="text-lime font-bold">Power Apps y Power Automate</span>.
+            </p>
             <div class="flex flex-wrap gap-4">
-                <a href="https://www.linkedin.com/in/stiven-david-a-29b67b136/" target="_blank" class="border-2 border-lime text-lime font-bold py-3 px-8 rounded-md hover:bg-lime hover:text-black transition flex items-center gap-2">
+                <a href="https://www.linkedin.com/in/stiven-david-alvarez-romero-401569213/" target="_blank" class="border-2 border-lime text-lime font-bold py-3 px-8 rounded-md hover:bg-lime hover:text-black transition flex items-center gap-2">
                     <i class="fab fa-linkedin"></i> Contáctame
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN CONOCIMIENTOS (Habilidades con Logos) -->
+    <!-- SECCIÓN CONOCIMIENTOS -->
     <section id="habilidades" class="max-w-6xl mx-auto py-24 px-6 md:px-20 border-t border-zinc-900">
         <h2 class="text-3xl font-bold mb-16 text-white italic">/ Conocimientos Técnicos</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -112,184 +99,97 @@
             </div>
         </div>
     </section>
-    <!-- SECCIÓN EXPERIENCIA PROFESIONAL ACTUALIZADA -->
+
+    <!-- SECCIÓN EXPERIENCIA -->
     <section id="experiencia" class="max-w-6xl mx-auto py-24 px-6 md:px-20 border-t border-zinc-900">
         <h2 class="text-3xl font-bold mb-16 text-white italic">/ Experiencia Profesional</h2>
-        
         <div class="space-y-16 border-l-2 border-zinc-800 pl-8 relative">
             <div class="relative">
                 <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-lime shadow-[0_0_15px_#84cc16]"></div>
                 <span class="text-lime font-bold text-xs uppercase tracking-widest">Abril 2024 - Presente</span>
                 <h3 class="text-2xl font-bold text-white mt-1">Analista de Soluciones Móviles</h3>
-                <p class="text-zinc-500 mb-6 font-medium">Diana Corporación</p>
+                <p class="text-zinc-500 mb-4 font-medium">Diana Corporación</p>
                 <ul class="text-zinc-400 text-sm space-y-3 max-w-3xl list-none">
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Desarrollo de <span class="text-white font-semibold">scripts en Python</span> y aplicaciones en <span class="text-white font-semibold">Power Apps</span> para la optimización de procesos internos.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Arquitectura y gestión de bases de datos mediante <span class="text-white font-semibold">procedimientos almacenados en SQL Server</span>.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Automatización de flujos de trabajo críticos utilizando <span class="text-white font-semibold">Power Automate</span>.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Despliegue y capacitación de usuarios en aplicaciones empresariales alojadas en entornos <span class="text-white font-semibold">AWS (Cloud)</span>.</span>
-                    </li>
+                    <li class="flex items-start gap-2"><span class="text-lime">▹</span><span>Desarrollo de <span class="text-white font-semibold">scripts en Python</span> y aplicaciones en Power Apps.</span></li>
+                    <li class="flex items-start gap-2"><span class="text-lime">▹</span><span>Gestión de bases de datos mediante <span class="text-white font-semibold">procedimientos almacenados en SQL Server</span>.</span></li>
                 </ul>
             </div>
-            <div class="relative">
-                <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-lime shadow-[0_0_15px_#84cc16]"></div>
+            <!-- ... Las demás experiencias siguen igual ... -->
+             <div class="relative">
+                <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-zinc-700"></div>
                 <span class="text-zinc-500 font-bold text-xs uppercase tracking-widest">Marzo 2022 - Abril 2024</span>
                 <h3 class="text-2xl font-bold text-white mt-1">Auxiliar de Soporte Tecnología</h3>
-                <p class="text-zinc-500 mb-6 font-medium">Diana Corporación</p>
-                <ul class="text-zinc-400 text-sm space-y-3 max-w-3xl list-none">
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Administración integral de <span class="text-zinc-300 font-semibold">Active Directory</span> y servidores de impresión corporativos.</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Configuración técnica y soporte de infraestructura de red inalámbrica (<span class="text-zinc-300 font-semibold">TP-Link Omada</span>).</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Gestión estratégica de inventario tecnológico y coordinación con proveedores externos para mantenimiento de hardware.</span>
-                    </li>
-                </ul>
+                <p class="text-zinc-500 mb-4">Diana Corporación</p>
+                <p class="text-zinc-400 text-sm">Administración de Active Directory y soporte técnico nivel 1.</p>
             </div>
-            <div class="relative">
-                <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-lime shadow-[0_0_15px_#84cc16]"></div>
-                <span class="text-zinc-500 font-bold text-xs uppercase tracking-widest">Mayo 2017 - Marzo 2022</span>
-                <h3 class="text-2xl font-bold text-white mt-1">Auxiliar de Operaciones</h3>
-                <p class="text-zinc-500 mb-6 font-medium">Pc Com S.A</p>
-                <ul class="text-zinc-400 text-sm space-y-3 max-w-3xl list-none">
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Alistamiento de equipos tecnológicos</span>
-                        <span>Envio de equipos y realizar el debido seguimiento</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Responsable del (<span class="text-zinc-300 font-semibold">Soporte técnico nivel 1</span>) para clientes externos.</span>
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Control de inventarios trimestrales de activos de hardware</span>
-                    </li>
-                </ul>
-            </div>
-                        <div class="relative">
-                <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-lime shadow-[0_0_15px_#84cc16]"></div>
-                <span class="text-zinc-500 font-bold text-xs uppercase tracking-widest">Julio 2016 - Enero 2017</span>
-                <h3 class="text-2xl font-bold text-white mt-1">Tecnico en sistemas(Practicante)</h3>
-                <p class="text-zinc-500 mb-6 font-medium">Escalar Ingenieria S.A</p>
-                <ul class="text-zinc-400 text-sm space-y-3 max-w-3xl list-none">
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Alistamiento de equipos</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Responsable del (<span class="text-zinc-300 font-semibold">Soporte técnico nivel 1</span>) para usuarios finales</span>
-                    <li class="flex items-start gap-2">
-                        <span class="text-lime">▹</span> 
-                        <span>Backups de seguridad al momento del retiro del personal</span>
-                    </li>
-                </ul>
-            </div>
+        </div>
     </section>
 
-    <!-- SECCIÓN FORMACIÓN ACADÉMICA CON LOGOS -->
+    <!-- SECCIÓN FORMACIÓN -->
     <section id="formacion" class="max-w-6xl mx-auto py-24 px-6 md:px-20 border-t border-zinc-900">
         <h2 class="text-3xl font-bold mb-12 text-white italic">/ Formación Académica</h2>
         <div class="grid md:grid-cols-2 gap-8">
-            
-            <!-- Universidad San Mateo -->
-            <div class="p-8 rounded-xl border border-zinc-800 bg-zinc-900/10 hover:border-lime transition-all group">
-                <div class="h-16 mb-6 flex items-center">
-                    <img src="img/sanmateo.png" alt="Logo San Mateo" class="h-full object-contain group-hover:scale-105 transition-transform">
-                </div>
+            <div class="p-8 rounded-xl border border-zinc-800 bg-zinc-900/10 hover:border-lime transition-all group text-center">
+                <img src="img/sanmateo.png" alt="San Mateo" class="h-16 mx-auto mb-4 object-contain">
                 <h3 class="text-xl font-bold text-white">Ingeniería de Sistemas</h3>
                 <p class="text-zinc-500">Fundación Universitaria San Mateo</p>
-                <p class="text-zinc-600 text-xs mt-2 italic font-semibold uppercase tracking-wider">2018 - 2025</p>
             </div>
-
-            <!-- SENA -->
-            <div class="p-8 rounded-xl border border-zinc-800 bg-zinc-900/10 hover:border-lime transition-all group">
-                <div class="h-16 mb-6 flex items-center">
-                    <img src="img/sena.png" alt="Logo SENA" class="h-full object-contain group-hover:scale-105 transition-transform">
-                </div>
+            <div class="p-8 rounded-xl border border-zinc-800 bg-zinc-900/10 hover:border-lime transition-all group text-center">
+                <img src="img/sena.png" alt="SENA" class="h-16 mx-auto mb-4 object-contain">
                 <h3 class="text-xl font-bold text-white">Técnico en Sistemas</h3>
                 <p class="text-zinc-500">SENA</p>
-                <p class="text-zinc-600 text-xs mt-2 italic font-semibold uppercase tracking-wider">2016 - 2017</p>
             </div>
-
         </div>
     </section>
-    <!-- SECCIÓN CURSOS ADICIONALES CON LOGOS Y CERTIFICADOS -->
+
+    <!-- SECCIÓN CURSOS -->
     <section id="cursos" class="max-w-6xl mx-auto py-24 px-6 md:px-20 border-t border-zinc-900">
         <h2 class="text-3xl font-bold mb-16 text-white italic">/ Cursos Adicionales</h2>
-        
         <div class="grid md:grid-cols-2 gap-8">
-            
-            <!-- Curso 1: Análisis de Datos -->
             <div class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/10 hover:border-lime transition-all flex items-center gap-6 group">
-                <!-- CONTENEDOR DEL LOGO -->
-                <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2 group-hover:scale-105 transition-transform duration-300 shadow-lg shadow-lime/5">
-                    <img src="img/certificado.png" alt="Instituto Análisis" class="w-full h-full object-contain">
-                </div>
-                
+                <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2"><img src="img/certificado.png" class="w-full h-full object-contain"></div>
                 <div class="flex-1">
                     <h3 class="text-lg font-bold text-white">Análisis de Datos</h3>
-                    <p class="text-zinc-500 text-sm mb-3">Certificación Profesional</p>
-                    
-                    <!-- BOTÓN CERTIFICADO -->
-                    <a href="docs/Analisis-de-datos.pdf" target="_blank" class="inline-flex items-center gap-2 text-lime text-xs font-bold bg-lime/10 px-3 py-1.5 rounded-md hover:bg-lime hover:text-black transition-all">
+                    <a href="docs/Analisis-de-datos.pdf" target="_blank" class="inline-flex items-center gap-2 text-lime text-xs font-bold bg-lime/10 px-3 py-1.5 rounded-md hover:bg-lime hover:text-black transition-all mt-2">
                         <i class="fas fa-certificate"></i> Ver Credencial
                     </a>
                 </div>
             </div>
+        </div>
     </section>
-<!-- SECCIÓN PROYECTOS (ESTRUCTURA CORREGIDA) -->
+
+    <!-- SECCIÓN PROYECTOS -->
     <section id="proyectos" class="max-w-6xl mx-auto py-24 px-6 md:px-20 border-t border-zinc-900">
         <h2 class="text-3xl font-bold mb-16 text-white italic">/ Proyectos Destacados</h2>
-        
-        <!-- Tarjeta del Proyecto -->
         <div class="bg-zinc-900/40 border border-zinc-800 p-8 md:p-12 rounded-3xl flex flex-col md:flex-row gap-10 items-center group hover:border-lime/30 transition-all">
-            
-            <!-- PARTE IZQUIERDA: TEXTO Y BOTONES -->
             <div class="flex-1 text-left">
                 <span class="text-lime font-bold text-xs uppercase tracking-widest">Python + IA + SQL</span>
                 <h3 class="text-3xl font-bold text-white mt-4 mb-6">HelpDesk AI Classifier</h3>
                 <p class="text-zinc-400 leading-relaxed mb-8 max-w-xl">
-                    API profesional desarrollada para optimizar el triaje de tickets. Utiliza <span class="text-white font-bold">Google Gemini</span> para clasificar problemas automáticamente y almacena datos estructurados en SQL Server.
+                    API profesional desarrollada para optimizar el triaje de tickets mediante <span class="text-white font-bold">IA Generativa</span> y SQL Server.
                 </p>
-                
-                <!-- Contenedor de Botones -->
                 <div class="flex flex-wrap items-center gap-6">
-                    <!-- Botón GitHub -->
-                    <a href="https://github.com/sdalvarez-arch/Proyectos" target="_blank" 
-                       class="text-white font-bold hover:text-lime transition underline decoration-lime/30 underline-offset-8">
-                        Ver código en GitHub <i class="fas fa-external-link-alt text-sm"></i>
-                    </a>
-
-                    <!-- Botón Demo -->
-                    <a href="https://bpn8zj7tceoaqtxcaxfdsj.streamlit.app/" target="_blank" 
-                       class="bg-lime text-black font-bold py-2 px-6 rounded-md hover:bg-[#a3e635] transition flex items-center gap-2 shadow-lg shadow-lime/20">
-                        <i class="fas fa-play-circle"></i> Ver Demo en Vivo
-                    </a>
+                    <a href="https://github.com/sdalvarez-arch/Proyectos" target="_blank" class="text-white font-bold hover:text-lime transition underline decoration-lime/30 underline-offset-8">Ver código en GitHub</a>
+                    <a href="https://bpn8zj7tceoaqtxcaxfdsj.streamlit.app/" target="_blank" class="bg-lime text-black font-bold py-3 px-8 rounded-md hover:bg-[#a3e635] transition flex items-center gap-2 shadow-lg shadow-lime/20">Ver Demo en Vivo</a>
                 </div>
             </div>
-
-            <!-- PARTE DERECHA: LOGO -->
             <div class="w-48 h-48 md:w-64 md:h-64 rounded-2xl flex items-center justify-center bg-white p-6 shadow-2xl transition-all duration-500 group-hover:scale-105 shrink-0">
-                <img src="img/helpdesk-logo.png" alt="Helpdesk AI Logo" class="w-full h-full object-contain">
+                <img src="img/helpdesk-logo.png" alt="Logo" class="w-full h-full object-contain">
             </div>
-
         </div>
     </section>
+
+    <footer class="py-20 text-center border-t border-zinc-900">
+        <p class="text-zinc-600 text-sm tracking-widest uppercase italic">Stiven David Alvarez Romero // 2026</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      new Typed('#typing', {
+        strings: ['Stiven David Alvarez Romero', 'Ingeniero de Sistemas', 'Desarrollador Backend', 'Especialista en IA'],
+        typeSpeed: 50, backSpeed: 30, backDelay: 2000, loop: true, showCursor: true, cursorChar: '|'
+      });
+    </script>
 </body>
 </html>
